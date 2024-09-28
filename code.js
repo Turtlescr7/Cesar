@@ -31,3 +31,20 @@ console.log(encFirstLetter2);
 let encMessage = "EUXWXV";
 const teaseMessage = encMessage.slice(0, 3);
 console.log(teaseMessage);
+
+const randoNum = Math.random();
+console.log(randoNum);
+
+const lowShifValue = 3;
+const highSiftValue = 33;
+
+/*We added a one so that it scales the value from 3-30.99999... .
+We also added Math.floor to round to the  nearest interger and stays within
+the desired range.
+We also multiply so that randoNum scales range expands this range to 
+encompass values between 3-33.
+*/
+const randoShiftValue =
+  Math.floor(randoNum * (highSiftValue - lowShifValue + 1)) + lowShifValue;
+
+console.log(randoShiftValue);
