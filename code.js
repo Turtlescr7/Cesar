@@ -70,18 +70,20 @@ if (emblemClub2 === "Laurel" && partyLoc === "Forum") {
 
 switch (emblemClub3) {
   case 7:
-    location += " North";
+    partyLoc += " North";
     break;
   case 3:
-    location += " South";
+    partyLoc += " South";
     break;
   case 9:
-    location += " East";
+    partyLoc += " East";
     break;
   case 4:
-    location += " West";
+    partyLoc += " West";
     break;
 }
+
+console.log(partyLoc);
 
 /*Question: is esentiall to know  how to use == and === since they are
 a form to understand how equality is determined Ex:
@@ -89,3 +91,20 @@ a form to understand how equality is determined Ex:
 where 
 1 === "1" is false because they are of different type
 */
+
+const guests = ["ANTONY", "CICERO", "CASSIUS", "CLEOPATRA"];
+
+guests.unshift("BRUTUS");
+guests.push("AUGUSTUS", "LUCIA");
+
+//Question: the result of no being invited should return -1
+const checkSpartacus = guests.indexOf("SPARTACUS");
+const newGuests = guests.filter((guests) => guests !== "CASSIUS");
+const specialGuests = newGuests.slice(0, 3);
+const finalGuest = [newGuests[0], ...newGuests.slice(1).sort()];
+
+console.log(checkSpartacus);
+console.log(guests);
+console.log(newGuests);
+console.log(specialGuests);
+console.log(finalGuest);
