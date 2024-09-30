@@ -92,7 +92,7 @@ where
 1 === "1" is false because they are of different type
 */
 
-const guests = ["ANTONY", "CICERO", "CASSIUS", "CLEOPATRA"];
+//const guests = ["ANTONY", "CICERO", "CASSIUS", "CLEOPATRA"];
 
 guests.unshift("BRUTUS");
 guests.push("AUGUSTUS", "LUCIA");
@@ -104,7 +104,7 @@ const specialGuests = newGuests.slice(0, 3);
 const finalGuest = [newGuests[0], ...newGuests.slice(1).sort()];
 
 console.log(checkSpartacus);
-console.log(guests);
+//console.log(guests);
 console.log(newGuests);
 console.log(specialGuests);
 console.log(finalGuest);
