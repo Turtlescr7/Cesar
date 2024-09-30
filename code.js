@@ -108,3 +108,5 @@ console.log(checkSpartacus);
 console.log(newGuests);
 console.log(specialGuests);
 console.log(finalGuest);
+
+
